@@ -1,65 +1,159 @@
-* {
-    border: 1px solid black;
-}
-
 body {
     display: flex;
     flex-direction: column;
-    padding: 0 45px;
+    margin: 0;
+    font-family: Roboto, sans-serif;
 }
 
-.header-section, .info-container, .lower-sign-up {
+.header-section, .info-container, .lower-sign-up{
     display: flex;
+    padding: 0 10em;
 }
 
-.main-navigation, .intro, .links, .call-to-action, .testimonial {
+.main-navigation, .intro, .links, .call-to-action {
     display: flex;
 }
 
 .header-section {
     flex-direction: column;
+    padding-bottom: 6em;
 }
 
 .main-navigation {
     justify-content: space-between;
+    margin-bottom: 6em;
+    padding: 20px 0;
 }
 
-.header-section img {
-    width: 200px;
-    height: 100px;
-    border: 1px solid black;
+.logo {
+    font-weight: 700;
+}
+
+.links {
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.links a {
+    text-decoration: none;
+}
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.intro-sign-up {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.intro-sign-up-button button {
+    flex-shrink: 0;
+    border: none;
+}
+
+.intro-large {
+    line-height: 0.9;
+}
+
+.intro-image {
+    border: 1px solid black;    
+    flex-basis: 700px;
+    background-color: #8b8c8f;
 }
 
 .info-container {
     flex-direction: column;
+    margin-bottom: 6em;
+    padding-top: 24px;
 }
 
 .info-header {
     align-self: center;
+    margin-bottom: 24px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 150px;
+    gap: 5px;
+}
+
+.info-img {
+    border: 3px solid #3882F6;
+    border-radius: 10px;
+    flex: 0 0 150px;
+}
+
+.img-caption {
+    text-align: center;
+    color: #8b8c8f;
 }
 
 .info-subsection {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
 }
 
 .testimonial {
+    display: flex;
     flex-direction: column;
-    padding: 20px;
+    align-self: stretch;
+    background-color: #E5E7EB;
+    padding: 3em 12em;
+    margin-bottom: 6em;
+}
+
+blockquote {
+    margin-bottom: 0;
 }
 
 .attribution {
     align-self: flex-end;
-}
-
-.lower-sign-up {
-    justify-content: center;
-    align-items: center;
+    font-weight: 700;
+    margin-right: 40px;
 }
 
 .call-to-action {
     gap: 10px;
-    padding: 30px;
+    padding: 45px 30px;
+    margin: 0 10em 6em;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 15px;
 }
+
+.cta-text {
+    color: white;
+}
+
+.call-to-action-header {
+    font-weight: 900;
+}
+
+.call-to-action button {
+    color: white;
+    border: 2px solid white;
+}
+
+footer {
+    padding: 0 10%;
+}
+
+button {
+    border: none;
+    padding: 8px 32px;
+    font-weight: 700;
+    border-radius: 10px;
+    color: white;
+}
+
 /* As prescribed in The Odin Project Landing Page project guidelines*/
 
 /*Need to do font */
@@ -79,7 +173,7 @@ body {
     font-weight: 900;
 }
 
-.intro-small {
+.intro-small, a {
     font-size: 18px;
     color: #E5E7EB;
 }
@@ -94,8 +188,7 @@ button, .call-to-action {
     font-weight: 900;
 }
 
-.blockquote {
-    background-color: #E5E7EB;
+blockquote {
     font-size: 36px;
     color: #1F2937;
     font-weight: 300;
